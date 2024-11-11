@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3 </title>
+</head>
+
+<body>
+
+    <h3>
+        Write a travel booking system that allows a user to select a mode of transport (Flight, Train, Bus) and then
+        choose a class or category:
+
+        Flight: Economy, Business
+
+        Train: Sleeper, AC Class
+
+        Bus: Standard, Luxury
+
+
+        Hint: Based on the mode of transport and class selected, display the approximate cost of travel. Use nested
+        switches for the class/category selection within each transport mode.
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+        let mode = prompt("enter the mode of transport:").toLowerCase().trim();
+        switch (mode) {
+            case "flight":
+                let FClass = prompt("enter the class :").toLowerCase();
+                switch (FClass) {
+                    case "economy":
+                        console.log(`the approximate price is : 1000$`);
+                        break;
+                    case "business":
+                        console.log(`the approximate price is : 5000$`);
+                        break;
+                    default:
+                        console.log(`please enter a valid class`);
+                }
+                break;
+            case "train":
+                let TClass = prompt("enter the class :").toLowerCase();
+                switch (TClass) {
+                    case "sleeper":
+                        console.log(`the approximate price is : 100$`);
+                        break;
+                    case "ac class":
+                        console.log(`the approximate price is : 500$`);
+                        break;
+                    default:
+                        console.log(`please enter a valid class`);
+                }
+                break;
+            case "bus":
+                let BClass = prompt("enter the class :").toLowerCase();
+                switch (BClass) {
+                    case "standard":
+                        console.log(`the approximate price is : 150$`);
+                        break;
+                    case "luxury":
+                        console.log(`the approximate price is : 300$`);
+                        break;
+                    default:
+                        console.log(`please enter a valid class`);
+                }
+                break;
+            default:
+                console.log(`please enter a valid mode`);
+        }
+    </script>
+</body>
+
+</html>

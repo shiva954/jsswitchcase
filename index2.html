@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2 </title>
+</head>
+
+<body>
+
+    <h3>
+        . Movie Ticket Booking System
+
+        Problem: Create a program for booking movie tickets where a user chooses a movie and seat category. The options
+        should be:
+
+        Movie:
+
+        Action: Standard Seat - 10rs, VIP Seat - 20rs
+
+        Comedy: Standard Seat - 8rs, VIP Seat - 15rs
+
+        Drama: Standard Seat -6rs, VIP Seat - 12rs
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+        let movie = prompt("enter the movie type:").toLowerCase().trim();
+        switch (movie) {
+            case "action":
+                let Aseat = prompt("enter the seat type :").toLowerCase();
+                switch (Aseat) {
+                    case "standard seat":
+                        console.log(`10rs`);
+                        break;
+                    case "vip seat":
+                        console.log(`20rs`);
+                        break;
+                    default:
+                        console.log(`please enter a valid seat type`);
+                }
+                break;
+            case "comedy":
+                let Cseat = prompt("enter the seat type :").toLowerCase();
+                switch (Cseat) {
+                    case "standard seat":
+                        console.log(`10rs`);
+                        break;
+                    case "vip seat":
+                        console.log(`20rs`);
+                        break;
+                    default:
+                        console.log(`please enter a valid seat type`);
+                }
+                break;
+            case "drama":
+                let Dseat = prompt("enter the seat type :").toLowerCase();
+                switch (Dseat) {
+                    case "standard seat":
+                        console.log(`10rs`);
+                        break;
+                    case "vip seat":
+                        console.log(`20rs`);
+                        break;
+                    default:
+                        console.log(`please enter a valid seat type`);
+                }
+                break;
+
+            default:
+                console.log(`please enter a valid movie type`);
+        }
+    </script>
+</body>
+
+</html>

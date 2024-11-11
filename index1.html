@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 </title>
+</head>
+
+<body>
+
+    <h3>
+        Design a program that calculates discounts based on product categories (Electronics, Clothing, Grocery). Each
+        category has specific discount rates for different products:
+
+        Electronics: Mobile - 5%, Laptop - 10%
+
+        Clothing: Men - 15%, Women - 20%
+
+        Grocery: Fruits - 5%, Vegetables - 10%
+
+
+        Hint: Implement nested switch cases to handle products within each category and apply the discounts accordingly.
+        Display the discount rate for the selected product.
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+        let category = prompt("enter the category:").toLowerCase().trim();
+        switch (category) {
+            case "electronics":
+                let device = prompt("enter the device :").toLowerCase().trim();
+                switch (device) {
+                    case "mobile":
+                        console.log(`you get 5% discount`);
+                        break;
+                    case "laptop":
+                        console.log(`you get 15% discount`);
+                        break;
+                    default:
+                        console.log(`please enter a valid electronic device`);
+                }
+                break;
+            case "clothing":
+                let gender = prompt("enter the gender :").toLowerCase().trim();
+                switch (gender) {
+                    case "men":
+                        console.log(`you get 15% discount`);
+                        break;
+                    case "women":
+                        console.log(`you get 20% discount`);
+                        break;
+                    default:
+                        console.log(`please enter a valid gender`);
+                }
+                break;
+            case "grocery":
+                let type = prompt("enter the type of grocery :").toLowerCase().trim();
+                switch (type) {
+                    case "fruits":
+                        console.log(`you get 5% discount`);
+                        break;
+                    case "vegetables":
+                        console.log(`you get 10% discount`);
+                        break;
+                    default:
+                        console.log(`please enter a valid grocery type`);
+                }
+                break;
+
+            default:
+                console.log(`please enter a valid category`);
+        }
+    </script>
+</body>
+
+</html>
